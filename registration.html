@@ -26,11 +26,80 @@
 
 <div class="Form">
 
-    <form>
-        <label for="fname">Nombre:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
+    <form action="show_data.html" method="get">
+        <div class="form1">
+         <label for="Nombre">Nombre del jugador:</label>
+         <input type="text" name="Nombre" id="Nombre"><br>
+         <label for="Apellido">Apellido:</label> 
+         <input type="text" name="Apellido" id="Apellido"><br>
+         <label for="Direccon">Dirección:</label>
+         <input type="text" name="Direcion" id="Direcion"><br>
+         <label for="Ciudad">Ciudad:</label>
+         <input type="text" name="Ciudad" id="Ciudad"><br>
+         <label for="CodigoP">Código Postal:</label>
+         <input type="text" name="CodigoP" id="CodigoP"><br>
+         <label for="fecha">Fecha de nacimiento:</label>
+         <input type="date" name="fecha" id="fechaN"><br>
+         </div>
+         <label for="genero">Género:</label>
+         <input type="radio" name="genero" id="generom" value="Mujer">Mujer
+         <input type="radio" name="genero" id="generoh" value="Hombre">Hombre 
+         <br>
+         <label for="grado">Grado:</label>
+         <input type="radio" name="grado" id="grado0" value="Pre_escolar">Preescolar
+         <input type="radio" name="grado" id="grado1" value="Primero">1°
+         <input type="radio" name="grado" id="grado2" value="Segundo">2°
+         <input type="radio" name="grado" id="grado3" value="Tercero">3°
+         <input type="radio" name="grado" id="grado4" value="Cuerto">4°
+         <input type="radio" name="grado" id="grado5" value="Quinto">5°
+         <br>
+         <label for="EscuelaCerca"><strong>¿De que escuela vives más cerca?</strong></label>
+         <br>
+         <select name="EscuelaCerca" id="EC">
+           <option name="EscuelaCerca" id="EC1" value="AJ_Katzenmaier">AJ Katzenmaier
+           <option name="EscuelaCerca" id="EC2" value="Greenbay">Greenbay
+           <option name="EscuelaCerca" id="EC3" value="Howard_A_Yeager">Howard A Yeager</option>
+           <option name="EscuelaCerca" id="EC4" value="Marjorie_P_Hart">Marjorie P Hart</option>
+           <option name="EscuelaCerca" id="EC5" value="North_Elementary">North Elementary</option>
+           <option name="EscuelaCerca" id="EC6" value="South_Elementary">South Elementary</option>
+         </select>
+         <br>
+         <label for="posicion"><strong>¿Que posición(es) juegas normalmente? (marca todas las que correspondan)</strong></label>
+         <br>
+         <br>
+         <input type="checkbox" name="posicion" id="posicion1" value="Delantero">Delantero
+         <input type="checkbox" name="posicion" id="posicion2" value="Portero">Portero
+         <input type="checkbox" name="posicion" id="posicion3" value="Medio_campo">Medio campo
+         <input type="checkbox" name="posicion" id="posicion4" value="Defensa">Defensa
+         <br>
+         <label for="uniforme"><strong>Tamaño del uniforme</strong></label>
+         <br>
+         <br>
+         <input type="radio" name="uniforme" id="Uniforme1" value="NinoP">Niño P
+         <input type="radio" name="uniforme" id="Uniforme2" value="NinoM">Niño M
+         <input type="radio" name="uniforme" id="Uniforme3" value="NinoG">Niño G
+         <input type="radio" name="uniforme" id="Uniforme4" value="Pequeno">Pequeño
+         <input type="radio" name="uniforme" id="Uniforme5" value="Mediano">Mediano
+         <input type="radio" name="uniforme" id="Uniforme6" value="Grande">Grande
+         <input type="radio" name="uniforme" id="Uniforme7" value="Extra_grande">Extra-grande
+         <h4>Permiso para jugar</h4>
+         <p>Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el solicitante de registro y 
+           yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer la posibilidad 
+           de lesiones físicas asociadas al fútbol y en consideración a la"Liga" que acepta al solicitante de registro 
+           para sus programas y actividades de fútbol, Por la presente libero y descargo a NYSL, sus empleados y 
+           personal asociado y voluntarios, incluyendo las instalaciones utilizadas para prácticas y juegos, contra 
+           cualquier reclamo por o en nombre del solicitante de registro como resultado de la participación del 
+           solicitante del programa a o en el transporte desde o hacia las actividades patrocinadas por NYSL.</p>
+           <p>Al ingresar su nombre a continuación, acuerda y autoriza lo anterior. Además, reconoce 
+           que ha leído la política de cancelación y acepta sus términos.</p><br>
+         <label for="firma">Firma padre/tutor:</label>
+         <input type="text" name="firma" id="firmaPT">
+         <label for="fechafirma">Fecha:</label>
+         <input type="text" name="fechafirma" id="fechafirma">
+       
+         <hr>
+         <br>
+         <input type="submit" value="Enviar Formulario" id="EF">
       </form>
 
 
